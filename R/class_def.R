@@ -804,7 +804,7 @@ setMethod(f = 'do_query',
             return(out)
         } else if (input_item$name == 'analysis_id') {
             df = do_query(context$name,input_item$name,input_value,'datatable')
-            nf=attributes(df)$number_of_factors
+            nf = attributes(df)$number_of_factors
 
             X=as.data.frame(t(df))
 
@@ -869,10 +869,10 @@ setMethod(f = 'do_query',
         df = do_query(context$name,input_item$name,input_value,'untarg_data')
         fq = do_query('study','analysis_id',input_value,'untarg_factors')
 
-        fq=fq[,-1]
+        fq$count=NULL
 
-        SM=as.data.frame(df[,colnames(fq)])
-        df[,colnames(fq)]=NULL
+        SM=df[,colnames(fq),drop=FALSE]
+        df[,colnames(fq),drop=FALSE]=NULL
 
         df=as.data.frame(t(df))
         VM=data.frame(feature_id=rownames(df))
