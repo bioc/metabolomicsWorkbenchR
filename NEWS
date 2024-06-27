@@ -1,3 +1,6 @@
+Changes in 1.15.1
++ fix untarg import
+
 Changes in 1.11.2
 + further vignette cache improvements
 
