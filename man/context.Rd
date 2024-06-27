@@ -12,7 +12,7 @@ context
 }
 \description{
 A predefined list of mw_context objects. The context have been created to
-mirror the metabolomics workbench API documentation contexts as closely 
+mirror the metabolomics workbench API documentation contexts as closely
 as possible.
 }
 \examples{

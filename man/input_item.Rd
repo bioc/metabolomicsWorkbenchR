@@ -12,7 +12,7 @@ input_item
 }
 \description{
 A predefined list of mw_input_item objects. The items have been created to
-mirror the Metabolomics Workbench API documentation input items as closely 
+mirror the Metabolomics Workbench API documentation input items as closely
 as possible.
 }
 \examples{

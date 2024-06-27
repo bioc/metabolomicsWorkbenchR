@@ -12,7 +12,7 @@ output_item
 }
 \description{
 A predefined list of mw_output_item objects. The items have been created to
-mirror the Metabolomics Workbench API documentation output items as closely 
+mirror the Metabolomics Workbench API documentation output items as closely
 as possible.
 }
 \examples{

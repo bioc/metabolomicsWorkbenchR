@@ -1,15 +1,15 @@
 #' Output items
 #'
 #' A predefined list of mw_output_item objects. The items have been created to
-#' mirror the Metabolomics Workbench API documentation output items as closely 
+#' mirror the Metabolomics Workbench API documentation output items as closely
 #' as possible.
 #' @examples
 #' # list available output_items
 #' names(output_item)
-#' 
+#'
 #' # get the output item 'summary'
 #' output_item$summary
-#' 
+#'
 #' @rdname output_item
 #' @include generics.R class_def.R parse_fcns.R
 #'
@@ -19,15 +19,15 @@ output_item = list()
 #' Input items
 #'
 #' A predefined list of mw_input_item objects. The items have been created to
-#' mirror the Metabolomics Workbench API documentation input items as closely 
+#' mirror the Metabolomics Workbench API documentation input items as closely
 #' as possible.
 #' @examples
 #' # list available input_items
 #' names(input_item)
-#' 
+#'
 #' # get the input item 'study_id'
 #' input_item$study_id
-#' 
+#'
 #' @rdname input_item
 #' @export
 input_item = list()
@@ -35,15 +35,15 @@ input_item = list()
 #' Contexts
 #'
 #' A predefined list of mw_context objects. The context have been created to
-#' mirror the metabolomics workbench API documentation contexts as closely 
+#' mirror the metabolomics workbench API documentation contexts as closely
 #' as possible.
 #' @examples
 #' # list available contexts
 #' names(context)
-#' 
+#'
 #' # get the context 'study'
 #' context$study
-#' 
+#'
 #' @rdname context
 #' @export
 context = list()
@@ -66,7 +66,7 @@ context$compound = mw_context(
     input_items = c('regno','formula','inchi_key','lm_id','pubchem_cid',
         'hmdb_id','kegg_id','chebi_id','metacyc_id','abbrev'),
     output_items = c('all','classification','molfile','png','compound_exact')
-)    
+)
 
 context$refmet = mw_context(
     name = 'refmet',
