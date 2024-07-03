@@ -872,7 +872,7 @@ setMethod(f = 'do_query',
         fq$count=NULL
 
         SM=df[,colnames(fq),drop=FALSE]
-        df[,colnames(fq),drop=FALSE]=NULL
+        df[,colnames(fq)]=NULL
 
         df=as.data.frame(t(df))
         VM=data.frame(feature_id=rownames(df))
